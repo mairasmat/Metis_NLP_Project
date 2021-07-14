@@ -1,0 +1,22 @@
+# Unsupervised NLP Project Proposal
+### Question/need:
+- What is the framing question of your analysis, or the purpose of the model/system you plan to build?
+The purpose of this project will be to do a network analysis of recent tweets pertaining to Cuba, and determine how those tweets separate into topics and how those twitter users separate into communities.
+If possible, I'd like to be able to idenity bots through topic modeling.
+- Who benefits from exploring this question or building this model/system?
+World leaders or journalists etc. who want to understand who has what kind of opinions about the current situation in Cuba.
+### Data Description:
+- What dataset(s) do you plan to use, and how will you obtain the data?
+I plan to scrape tweets from twitter that contain the word 'Cuba' from the past seven days (or less, depending on # of tweets) using the REST api and Tweepy.
+- What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with?
+An individual unit of analysis would be a single tweet. I expect to work with the text data of each tweet and the user who tweeted it.
+- If modeling, what will you predict as your target?
+How the tweet feels about Cuba's current protests, if they agree or disagree.
+### Tools:
+- How do you intend to meet the tools requirement of the project?
+I will use NLTK and scikit-learn to process the data and create a model.
+- Are you planning in advance to need or use additional tools beyond those required?
+I will use an API to scrape data from twitter.
+### MVP Goal:
+- What would a minimum viable product (MVP) look like for this project?
+A MVP for this project would be a dataframe showing which words are most/least predictive of agreeing or disagreeing with Cuban protests.
